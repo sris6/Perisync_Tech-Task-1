@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task 6</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" media="(max-width:820px)" href="style-ipad.css">
+
+    <link rel="stylesheet" media="(max-width:480px)" href="style-mobile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+
+    <script src="https://kit.fontawesome.com/aac873e1e3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="bodydiv">
+
+
+    <button id="toggle-btn" onclick="mainBtn()">
+
+        <img src="img/left-chevron.png" alt="">
+
+    </button>
+
+    <button id="toggle-btn-2" onclick="navBtn()">
+
+        <img src="img/left-chevron.png" alt="">
+
+    </button>
+
+
+    <div class="navbar" id="navdiv">
+
+        <!-- Top ...  -->
+
+        <div class="top" >
+
+            <div class="logo">
+
+                <div class="line1">
+                    <div id="box1"></div>
+                    <div id="box2"></div>
+                </div>
+
+                <div class="line2">
+                    <div id="box3"></div>
+                    <div id="box4"></div>
+                </div>
+
+            </div>
+
+            <div class="text hide-items">
+
+                <h2>INIBANK</h2>
+                <p>INC</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Options ...  -->
+
+        <div class="options">
+
+            <div class="overview hover" id="overview" onclick="mainBtn()">
+
+                <div class="nav-opt-logo">
+
+                    <img src="img/overview.png" alt="" id="opt1-logo">
+
+                </div>
+
+                <div class="opt-name">
+
+                    <p id="opt1-name">Overview</p>
+
+                </div>
+
+            </div>
+
+            <div class="cards hover">
+
+                <div class="nav-opt-logo">
+
+                    <img src="img/credit-card.png" alt="" class="filter">
+
+                </div>
+
+                <div class="opt-name">
+
+                    <p>Cards</p>
+
+                </div>
+
+                <div class="num">
+
+                    <p>4</p>
+
+                </div>
+
+            </div>
+
+            <div class="payment hover">
+
+                <div class="nav-opt-logo">
+
+                    <img src="img/wallet.png" alt="" class="filter">
+
+                </div>
+
+                <div class="opt-name">
+
+                    <p>Payments</p>
+
+                </div>
+
+                <div class="num">
+
+                    <p>13</p>
+
+                </div>
+
+            </div>
+
+            <div class="activity" id="optcontainar">
+
+                <div class="active hover" onclick="optBtn()">
+
+
+                    <div class="nav-opt-logo">
+
+                        <img src="img/bar-graph.png" alt="" class="filter">
+
+                    </div>
+
+                    <div class="opt-name">
+
+                        <p>Activity</p>
+
+                    </div>
+
+                    <div id="act-arrow">
+
+                        <img src="img/down-chevron.png" alt="" >
+
+                    </div>
+
+                </div>
+
+                <div class="opt" id="optiondiv">
+
+                    <div class="act-opts hover">
+
+                        <p>Earnings</p>
+
+                    </div>
+
+                    <div class="act-opts active-btn  hover">
+
+                        <p>Infunds</p>
+
+                    </div>
+
+                    <div class="act-opts hover">
+
+                        <p>Refunds</p>
+
+                    </div>
+
+                    <div class="act-opts hover">
+
+                        <p>Payouts</p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="setting hover" id="click-up">
+
+                <div class="nav-opt-logo">
+
+                    <img src="img/settings.png" alt="" class="filter">
+
+                </div>
+
+                <div class="opt-name">
+
+                    <p>Setting</p>
+
+                </div>
+
+                <div id="new">
+
+                    <p id="new">New!</p>
+
+                </div>
+
+            </div>
+
+            <div class="logout hover click-up">
+
+                <div class="nav-opt-logo">
+
+                    <img src="img/exit.png" alt="" class="filter">
+
+                </div>
+
+                <div class="opt-name">
+
+                    <p>Log out</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="toggle">
+
+
+            <button onclick="theme()" id="theme-btn"><i class="fa fa-adjust" aria-hidden="true"></i></button>
+
+        </div>
+
+        <div class="footer">
+
+            <div id="user-profile">
+
+                <div class="user-logo">
+
+                    <img src="img/boy.png" alt="">
+
+                </div>
+
+                <div class="user-name">
+
+                    <h3>Bayu Ananda</h3>
+
+                    <p>anandabayu@gmail.com</p>
+
+                </div>
+
+                <div class="arrow-btn">
+
+                    <img src="img/down-chevron.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="main" id="maindiv">
+
+        <div class="left">
+
+            <div class="header">
+
+                <img src="img/menu.png" alt="menu" id="menu">
+
+                <div class="heading">
+
+                    <h1> Good Morning, Bayu!</h1>
+
+                </div>
+
+                <div class="search">
+
+                    <div class="search-box" id="bgcolorsearch">
+
+                        <div class="img">
+
+                            <img src="img/search.png" alt="search">
+
+                        </div>
+
+                        <div class="input">
+
+                            <input type="text" placeholder="Search...">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card ...  -->
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <div class="mycard">
+
+                        <p>My Card</p>
+
+                    </div>
+
+                    <div class="btns">
+
+                        <div class="arrows">
+
+                            <div id="left-arrow" >
+
+                                <img src="img/left-chevron.png" alt="">
+
+                            </div>
+
+                            <div id="right-arrow">
+
+                                <img src="img/chevron.png" alt="">
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="cards">
+
+                    <div class="main-card">
+
+                        <div class="credit-card">
+
+                            <div class="card-content">
+
+
+                                <!-- Card Header ...  -->
+
+                                <div class="header">
+
+
+                                    <!-- Card Logo ...  -->
+
+                                    <div class="card-logo">
+
+                                        <div id="logo">
+
+                                            <div class="logo-line1">
+
+                                                <div id="box-1"></div>
+                                                <div id="box-2"></div>
+
+                                            </div>
+
+                                            <div class="logo-line2">
+
+                                                <div id="box-3"></div>
+                                                <div id="box-4"></div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Circles ...  -->
+
+                                    <div class="card-circles">
+
+                                        <div id="circle1">
+
+                                        </div>
+
+                                        <div id="circle2">
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <!-- Card Name ...  -->
+
+                                <div class="name">
+
+                                    <div class="holdername">
+
+                                        <p>Holder Name</p>
+
+                                    </div>
+
+                                    <div class="bayuanada">
+
+                                        <p>Bayu Ananda</p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Card Number ...  -->
+
+                                <div class="number">
+
+                                    <div class="num-left">
+
+                                        <div class="card-num">
+
+                                            <p>Card Number</p>
+
+                                        </div>
+
+                                        <div class="actual-num">
+
+                                            <p>8502 3643 7635 2347</p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="num-right">
+
+                                        <div class="exp-date">
+
+                                            <p>Exp</p>
+
+                                        </div>
+
+                                        <div class="date">
+
+                                            <p>08/24</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="balance">
+
+                        <div class="bal-box" id="bgcolorcard">
+
+                            <div class="total">
+
+                                <div class="total-bal">
+
+                                    <p>Total Balance</p>
+
+                                </div>
+
+                                <div class="amount">
+
+                                    <p>$56,138,00</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="currency">
+
+                                <div class="currency-text">
+
+                                    <p>Currency</p>
+
+                                </div>
+
+                                <div class="doller">
+
+                                    <p>US Dollar</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="withdraw">
+
+                                <button id="withdraw-btn">Withdraw</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Record ...  -->
+
+
+            <div class="record">
+
+                <div class="record-top">
+
+                    <div class="financial-text">
+
+                        <p>Financial Record</p>
+
+                    </div>
+
+                    <div class="right">
+
+                        <div class="days-container">
+
+                            <div id="day7">
+
+                                <div class="day-calendar">
+
+                                    <img src="img/calendar.png" alt="">
+
+                                </div>
+
+                                <div class="text">
+
+                                    <p>7 Days</p>
+
+                                </div>
+
+                            </div>
+
+                            <div id="arrow-logo">
+
+                                <img src="img/down-chevron.png" alt="">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="record-box">
+
+                    <div class="box">
+
+                        <div id="income">
+
+                            <div class="content-box">
+
+                                <div class="head">
+
+                                    <p>Total Income</p>
+
+                                </div>
+
+                                <div class="dollar-amount">
+
+                                    <p>$874,99</p>
+
+                                </div>
+
+                                <div class="stage">
+
+                                    <p><span>7.8%</span> from last week</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box">
+
+                        <div id="expense">
+
+                            <div class="content-box">
+
+                                <div class="head">
+
+                                    <p>Total Expense</p>
+
+                                </div>
+
+                                <div class="dollar-amount">
+
+                                    <p>$321,49</p>
+
+                                </div>
+
+                                <div class="stage">
+
+                                    <p><span>7.8%</span> from last week</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box">
+
+                        <div id="saving">
+
+                            <div class="content-box">
+
+                                <div class="head">
+
+                                    <p>Total Saving</p>
+
+                                </div>
+
+                                <div class="dollar-amount">
+
+                                    <p>$420,74</p>
+
+                                </div>
+
+                                <div class="stage">
+
+                                    <p><span>7.8%</span> from last week</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Flow Graph ...  -->
+
+            <div class="flow-graph">
+
+                <div class="graph-top">
+
+                    <div id="moneyflow">
+                        <p>Money Flow</p>
+                    </div>
+
+                    <div id="btns-sec">
+
+                        <div id="all-btn">
+
+                            <div id="p">
+                                <p>All Activity</p>
+                            </div>
+
+                            <div class="img">
+                                <img src="img/down-chevron.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div id="monthly-btn">
+
+
+                            <div id="text">
+
+                                <div id="calendar-logo">
+
+                                    <img src="img/calendar.png" alt="">
+
+                                </div>
+
+                                <div id="p">
+
+                                    <p>Monthly</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="img">
+
+                                <img src="img/down-chevron.png" alt="">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="main-graph">
+
+                    <canvas id="line-chart">
+
+                    </canvas>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="right">
+
+            <div class="earnings">
+
+
+                <div id="bar-chart-top">
+                    
+                    <div class="earn-text">
+
+                        <div class="left-text">
+                            
+                            <p>Earnings</p>
+
+                        </div>
+
+                        <div class="right-text">
+
+                            <p>View More</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="buttons-earn">
+
+                        <div class="month-btn">
+
+                            <div id="actual-btn">
+
+                                <div class="btn-img">
+
+                                    <img src="img/calendar.png" alt="">
+
+                                </div>
+
+                                <div class="btn-name">
+
+                                    <p>Monthly</p>
+
+                                </div>
+
+                                <div class="btn-arrow">
+
+                                    <img src="img/down-chevron.png" alt="">
+
+                                </div>
+
+                            </div>
+        
+                        </div>
+
+                        <div class="twomorebtns">
+
+                            <div id="circle-btn">
+
+                                <img src="img/archery-board.png" alt="">
+
+                            </div>
+
+                            <div id="bar-btn">
+
+                                <img src="img/bar-graph.png" alt="">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <canvas id="bar-chart"
+                width="700"
+                height="450"
+                >
+
+                </canvas>
+
+                <div id="bar-chart-btm">
+
+                    <div class="btm-content">
+
+                        <div id="dot1">
+
+                        </div>
+
+                        <p>Profit</p>
+
+                    </div>
+
+                    <div class="btm-content">
+
+                        <div id="dot2">
+
+                        </div>
+
+                        <p>Growth</p>
+
+                    </div>
+
+                    <div class="btm-content">
+
+                        <div id="dot3">
+
+                        </div>
+
+                        <p>Sales</p>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="transaction">
+
+                <div id="trans-head">
+
+                    <div class="head-left">
+
+                        <p>Transaction</p>
+
+                    </div>
+
+                    <div class="head-right">
+
+                        <p>View all</p>
+
+                    </div>
+
+                </div>
+
+                <div id="trans-content">
+
+
+                    <div id="steam" class="trans-content-list">
+
+                        <div class="icon">
+
+                            <div class="icon-logo">
+
+                                <img src="img/steam.png" alt="steam wallet" style="filter: invert();">
+
+                            </div>
+
+                        </div>
+
+                        <div class="details">
+
+                            <h3>Steam Wallet</h3>
+
+                            <p>Jan 06,2022 at 19.24</p>
+
+                        </div>
+
+                        <div class="count red-count">
+
+                            <p>-$29,49</p>
+
+                        </div>
+
+                    </div>
+
+                    <div id="shoopee" class="trans-content-list">
+
+
+                        <div class="icon">
+
+                            <div class="icon-logo">
+
+                                <img src="img/shopping-bag.png" alt="shoopepay" style="filter:invert()">
+
+                            </div>
+
+                        </div>
+
+                        <div class="details">
+
+                            <h3>Shoopepay</h3>
+
+                            <p>Jun 15,2022 at 19.24</p>
+
+                        </div>
+
+                        <div class="count green-count">
+
+                            <p>+$175,49</p>
+
+                        </div>
+
+
+                    </div>
+
+                    <div id="netflix" class="trans-content-list">
+
+
+                        <div class="icon">
+
+                            <div class="icon-logo">
+
+                                <img src="img/netflix.png" alt="netflix">
+
+                            </div>
+
+                        </div>
+
+                        <div class="details">
+
+                            <h3>Netflix</h3>
+
+                            <p>Nov 13,2022 at 19.24</p>
+
+                        </div>
+
+                        <div class="count red-count">
+
+                            <p>-$32,73</p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="quick-transfer">
+
+
+                <div id="quick-head">
+
+                    <div class="heading">
+
+                        <p>Quick Transfer</p>
+
+                    </div>
+
+                    <div class="dots-btn">
+
+                        <div class="dots3-btn">
+
+                            <img src="img/dots.png" alt="dots">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="card-number-sec">
+
+                    <div class="text-cardnum">
+
+                        <p>Card Number</p>
+
+                    </div>
+
+                    <div class="actual-number">
+
+                        <div id="number-containar">
+
+                            <div class="card-actual-number">
+
+                                <p>1234 5678 9012 3456</p>
+
+                            </div>
+
+                            <div class="visa">
+
+                                <img src="img/visa.png" alt="">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div id="amount-sec">
+
+                    <div class="amount-head">
+
+                        <p>Amount</p>
+
+                    </div>
+
+                    <div class="main-amount">
+
+                        <div class="amount-box">
+
+                            <h3>$821,56</h3>
+
+                            <p style="opacity: 0.7;">USD</p>
+
+                        </div>
+
+                        <div class="download">
+
+                            <img src="img/download.png" alt="download">
+
+                        </div>
+
+                        <div class="telegram">
+
+                            <img src="img/telegram.png" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
