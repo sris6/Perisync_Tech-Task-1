@@ -1,0 +1,99 @@
+
+    
+/* Media Query ...  */
+
+
+/* For ipad ...  */
+
+
+body {
+    width: 100%;
+    height: 165vh;
+    
+}
+
+
+/* Containar ...  */
+
+.containar {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* <!-- Login Section...  --> */
+
+.login_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_section .form {
+    width: 80%;
+    height: 75%;
+    margin-left: 15%;
+}
+
+.form .title .logo {
+    width: 10%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form .title .name {
+    font-size: 18px;
+}
+
+
+/* Heading ...  */
+
+.form .heading {
+    height: 30%;
+    padding-top: 2%;
+    font-size: 40px;
+}
+
+/* Input 1 ..  */
+
+
+#input1 , #input2 {
+    font-size: 18px;
+}
+
+
+label {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 1%;
+}
+
+.form .btn button {
+    font-size: 18px;
+}
+
+.form .footer a {
+    font-size: 18px;
+}
+
+.right_section {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    position: relative;
+}
+
+.right_section {
+    width: 100%;
+    margin: 0;
+}
+
+.right_left {
+    width: 50%;
+    margin: 0;
+}
