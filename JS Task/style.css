@@ -1,0 +1,191 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(211, 211, 211, 0.113);
+}
+
+#containar {
+    display: flex;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.135);
+}
+
+
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.forms .form1 {
+    width: 50%;
+    height: 100%;
+    font-size: 12px;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.122); */
+    font-weight: 500;
+}
+
+#addbtn {
+    outline: none;
+    border: none;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(0, 191, 255);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#showbtn {
+    outline: none;
+    border: none;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(0, 255, 81);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#clearbtn {
+    outline: none;
+    border: none;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(255, 0, 64);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#savebtn {
+    outline: none;
+    border: none;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 22%;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(2, 205, 90);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#delbtn {
+    outline: none;
+    border: none;
+    font-size: 10px;
+    padding: 5px 13px;
+    margin: 2px 0;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(255, 0, 64);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#editbtn {
+    outline: none;
+    border: none;
+    font-size: 10px;
+    padding: 5px 13px;
+    margin: 2px 0;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(2, 205, 90);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+#detailForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+#editform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form1 input,
+.form2 input {
+    padding: 2px 5px 2px 8px;
+    width: 80%;
+    outline: none;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 3px 0;
+    border: 1px solid rgba(0, 0, 0, 0.242);
+}
+
+
+
+
+.form1 input::placeholder,
+.form2 input::placeholder {
+    font-size: 12px;
+}
+
+.forms .form2 {
+    width: 50%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    border-right: 1px solid rgba(0, 0, 0, 0.122);
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 1%;
+}
+
+#tableHead {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    margin-bottom: 10px;
+}
+
+.table table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table table thead,
+.table table tbody {
+    font-size: 10px;
+}
+
+.table table tr th {
+    padding: 2px 15px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="containar">
+
+        <!-- Form ...  -->
+
+        <div class="forms">
+
+            <div class="form1">
+
+                <form action="" name="detailsForm" id="detailForm">
+
+                    <h3 class="heading">Enter Your Details</h3><br>
+
+                    <div class="name">
+                        Name : <br> <input type="text" placeholder="Enter Your Name " id="name" required>
+                    </div>
+
+                    <div class="age">
+                        Age : <br> <input type="number" placeholder="Enter Your Age " id="age" required>
+                    </div><br>
+
+                    Address : <br><br>
+                    <div class="line1">
+                        Line 1: <br> <input type="text" id="line1">
+                    </div>
+                    <div class="line2">
+                        Line 2: <br> <input type="text" id="line2">
+                    </div>
+                    <div class="locality">
+                        Locality: <br> <input type="text" id="locality">
+                    </div>
+                    <div class="city">
+                        City : <br> <input type="text" id="city">
+                    </div>
+                    <div class="state">
+                        State: <br> <input type="text" id="state">
+                    </div>
+                    <div class="country">
+                        Country : <br> <input type="text" id="country">
+                    </div>
+                    <div class="pincode">
+                        Pin Code : <br> <input type="number" id="pinCode" required><br>
+                    </div>
+                    <div class="btns">
+                        <button type="button" onclick="addData()" id="addbtn">Add Data</button>
+                        <button type="button" onclick="showData()" id="showbtn">Show Data</button>
+                        <button type="reset" id="clearbtn">Clear</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- Edit Form ...  -->
+
+            <div class="form2">
+
+                <form action="" id="editform">
+                    <!-- 
+                <h3>Edit Your Details</h3>
+                <br>
+                <div class="name">
+                    Name : <input type="text" placeholder="Enter Your Name " id="editName" value=${data.name}>
+                </div>
+                <div class="age">
+                    Age : <input type="number" placeholder="Enter Your Age " id="editAge" value=${data.age}>
+                </div>
+                Address : <br><br>
+               <div class="line1">
+                Line 1: <input type="text" id="editLine1" value=${data.address.line1}>
+               </div>
+              <div class="line2">
+                Line 2: <input type="text" id="editLine2" value=${data.address.line2}>
+              </div>
+               <div class="locality">
+                Locality: <input type="text" id="editLocality" value=${data.address.locality}>
+               </div>
+               <div class="city">
+                City : <input type="text" id="editCity" value=${data.address.city}>
+               </div>
+               <div class="state">
+                State: <input type="text" id="editState" value=${data.address.state}>
+               </div>
+               <div class="country">
+                Country : <input type="text" id="editCountry" value=${data.address.country}>
+               </div>
+               <div class="pincode">
+                Pin Code : <input type="number" id="editPinCode" value=${data.address.pinCode}>
+               </div>
+                <button type="button" onclick="saveChanges(${data.id})">Save Changes</button> -->
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Table ...  -->
+        <div class="table">
+
+            <h3 id="tableHead">Details List</h3>
+
+            <table id="table" border="1">
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th colspan="7">Address</th>
+                        <th rowspan="2">Delete</th>
+                        <th rowspan="2">Edit</th>
+                    </tr>
+
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Line 1</th>
+                        <th>Line 2</th>
+                        <th>Locality</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Pin code</th>
+                    </tr>
+                </thead>
+
+                <tbody id="t-body">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
