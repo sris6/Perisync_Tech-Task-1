@@ -1,0 +1,22 @@
+.mainAppContainar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.AppSideMenu {
+    width: 17%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+.AppContent {
+    width: 83%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
